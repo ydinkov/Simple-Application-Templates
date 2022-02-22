@@ -1,0 +1,20 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      
+    - name: Pack with dotnet
+      run: dotnet pack Templates --configuration Release    
+
+    - name: Push to Nuget
+      run: dotnet nuget push ./Templates/bin/Release/Templates.*.nupkg  -s https://www.nuget.org/ -k ${{ secrets.NUGET_API_KEY }}

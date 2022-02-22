@@ -1,0 +1,12 @@
+{
+  "author": "Yasen Dinkov",
+  "classifications": [ "Console", "Desktop" ],
+  "name": "Dependency Injected Command-line Template",
+  "identity": "Nibblebit.Templates.CommandLine",
+  "shortName": "di-commandline",
+  "tags": {
+    "language": "C#" 
+  },  
+  "preferNameDirectory": "true"
+}
+
