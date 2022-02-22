@@ -22,4 +22,4 @@ jobs:
       run: dotnet pack Templates.csproj --configuration Release    
 
     - name: Push to Nuget
-      run: dotnet nuget push ./bin/Release/Templates.*.nupkg  -s https://www.nuget.org/ -k ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push ./bin/Release/Nibblebit.Templates.CommandLine.*.nupkg  -s https://www.nuget.org/ -k ${{ secrets.NUGET_API_KEY }}
