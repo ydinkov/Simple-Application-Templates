@@ -28,6 +28,9 @@
   
 	  <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
 	  <Compile Remove="**\*" />
+
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="$(PackageLicenseFile)" />
+    <None Include="..\icon.png" Pack="true" PackagePath="$(PackageIconFile)" />
   </ItemGroup>
 
 </Project>
