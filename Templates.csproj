@@ -2,7 +2,7 @@
 
   <PropertyGroup>	  
 	<PackageType>Template</PackageType>
-	<PackageVersion>1.2</PackageVersion>
+	<PackageVersion>1.2.1</PackageVersion>
 
   <PackageIcon>icon.png</PackageIcon>
   <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -22,6 +22,7 @@
   <IncludeContentInPack>true</IncludeContentInPack>
 	<IncludeBuildOutput>false</IncludeBuildOutput>	
 	<ContentTargetFolders>content</ContentTargetFolders>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +30,8 @@
 	  <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
 	  <Compile Remove="**\*" />
 
+
+    <None Include="README.md" Pack="true" PackagePath="$(PackageReadmeFile)" />
     <None Include="LICENSE.md" Pack="true" PackagePath="$(PackageLicenseFile)" />
     <None Include="icon.png" Pack="true" PackagePath="$(PackageIconFile)" />
   </ItemGroup>
