@@ -2,10 +2,10 @@
 
   <PropertyGroup>	  
 	<PackageType>Template</PackageType>
-	<PackageVersion>1.1</PackageVersion>
+	<PackageVersion>1.2</PackageVersion>
 
   <PackageIcon>icon.png</PackageIcon>
-  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 
   <PackageProjectUrl>https://github.com/ydinkov/Simple-Application-Templates</PackageProjectUrl>
   <RepositoryUrl>https://github.com/ydinkov/Simple-Application-Templates</RepositoryUrl>
