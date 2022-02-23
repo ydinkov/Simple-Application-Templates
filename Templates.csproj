@@ -6,6 +6,7 @@
 
   <PackageIcon>icon.png</PackageIcon>
   <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+  <PackageReadmeFile>README.md</PackageLicenseFile>
 
   <PackageProjectUrl>https://github.com/ydinkov/Simple-Application-Templates</PackageProjectUrl>
   <RepositoryUrl>https://github.com/ydinkov/Simple-Application-Templates</RepositoryUrl>
