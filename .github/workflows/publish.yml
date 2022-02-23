@@ -3,12 +3,12 @@ name: .NET
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    paths:
+      - ./Templates.csproj
+      - ./templates
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
