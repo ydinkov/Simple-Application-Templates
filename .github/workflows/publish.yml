@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - ./Templates.csproj
+      - '**.csproj'
       - ./templates
 
 jobs:
