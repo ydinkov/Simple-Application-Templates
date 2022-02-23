@@ -2,7 +2,7 @@
 
   <PropertyGroup>	  
 	<PackageType>Template</PackageType>
-	<PackageVersion>1.2.1</PackageVersion>
+	<PackageVersion>1.2.2</PackageVersion>
 
   <PackageIcon>icon.png</PackageIcon>
   <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
