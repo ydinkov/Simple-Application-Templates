@@ -21,11 +21,20 @@ namespace DependenctInjectedCommandLineApplication.Commands
             });
 
 
-            Handler =  CommandHandler.Create<string>((string name) => 
-            {
-             
-                this.logger.LogInformation($"Hello {name}!");
-            });
+                Handler =  CommandHandler.Create<string>(DoWork);
+        }      
+
+
+        // Default Entrypoint. Start Here.
+        private void DoWork(string name){
+                
+            if(string.IsNullOrWhiteSpace(name))
+                this.logger.LogError("Provided name was invalid (null or whitespace)");
+            else{
+                Console.WriteLine($"Hello {name}!");
+                    if(name == "Mr. User")
+                        this.logger.LogWarning("Default option was chosen");
+            }        
         }       
     }
 }

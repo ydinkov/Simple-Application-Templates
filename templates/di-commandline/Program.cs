@@ -18,4 +18,4 @@ foreach (Command command in serviceProvider.GetServices<Command>())
 var commandLineBuilder = new CommandLineBuilder(rootCommand);
 var parser = commandLineBuilder.UseDefaults().Build();
 
-return parser.Invoke(args);
+return await parser.InvokeAsync(args);
