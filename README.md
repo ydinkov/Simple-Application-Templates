@@ -1,3 +1,6 @@
+
+![](icon.png)
+
 # Simple Application Templates
 
 This repository contains minimal dotnet commandline templates that combine:
